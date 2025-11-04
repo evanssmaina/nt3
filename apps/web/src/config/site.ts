@@ -1,4 +1,4 @@
-const url = process.env.VERCEL_URL!;
+const url = "https://nt3.vercel.app";
 
 export const siteConfig = {
   name: "nt3",

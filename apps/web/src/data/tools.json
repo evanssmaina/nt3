@@ -785,8 +785,7 @@
       "State Management",
       "Durable Execution"
     ],
-    "website": "https://upstash.com/docs/workflow",
-    "github": "https://github.com/upstash/workflow-js",
+    "website": "https://www.inngest.com/",
     "pricing": {
       "model": "freemium",
       "price": "Free tier available, pay per step execution"
