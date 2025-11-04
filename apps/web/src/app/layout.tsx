@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NuqsAdapter } from "nuqs/adapters/next";
 import Header from "@/components/header";
 import { siteConfig } from "@/config/site";
@@ -74,6 +76,8 @@ export default function RootLayout({
           <Header />
 
           {children}
+          <Analytics />
+          <SpeedInsights />
         </NuqsAdapter>
       </body>
     </html>
