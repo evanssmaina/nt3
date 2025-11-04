@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Menu } from "@/components/menu";
 import { ToolsList } from "@/components/tools-list";
 import { getAllCategories, getToolBySlug } from "@/lib/tools";
 import { ToolCategory } from "@/lib/types";
@@ -10,22 +9,8 @@ interface ToolPageProps {
 
 export async function generateStaticParams() {
   const categories = getAllCategories();
-  // For now, we'll generate static params for known tools
-  // In production, you'd fetch all tool slugs
-  const tools = [
-    "langchain",
-    "pinecone",
-    "vercel-ai-sdk",
-    "openai",
-    "anthropic-claude",
-    "qdrant",
-    "weaviate",
-    "llamaindex",
-    "chroma",
-    "supabase-vectors",
-  ];
 
-  return tools.map((slug) => ({ slug }));
+  return categories.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({

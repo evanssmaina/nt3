@@ -16,8 +16,8 @@ export default function AboutPage() {
 
         <div className="space-y-6 text-muted-foreground">
           <p className=" leading-relaxed">
-            Making AI development more accessible by connecting developers to
-            the best tools.
+            nt3 exists to make AI development faster and more accessible — by
+            connecting developers with the tools they actually need to build.
           </p>
 
           <section>
@@ -51,7 +51,7 @@ export default function AboutPage() {
               Community-Driven
             </h2>
             <p className="leading-relaxed">
-              NT3 is curated by the community, for the community. We're always
+              nt3 is curated by the community, for the community. We're always
               looking for new tools to add and welcome contributions from
               developers who have found great solutions to their AI development
               challenges.
@@ -63,7 +63,7 @@ export default function AboutPage() {
               Have a tool suggestion or want to contribute?{" "}
               <a
                 className="text-primary hover:underline"
-                href="https://github.com"
+                href="https://github.com/nt3ai/nt3"
                 rel="noopener noreferrer"
                 target="_blank"
               >

@@ -582,14 +582,27 @@
     "website": "https://upstash.com/redis",
     "github": "https://github.com/upstash/upstash-redis",
     "pricing": {
-      "model": "freemium",
-      "price": "Free tier available, pay per request"
+      "model": "pay-as-you-go"
+    }
+  },
+  {
+    "slug": "arcjet",
+    "name": "Arcjet",
+    "description": "Rate limiting and bot protection for APIs and web applications. Arcjet provides a simple API to protect your application from abuse with features like rate limiting, bot detection, and DDoS protection.",
+    "shortDescription": "Rate limiting and bot protection for modern applications.",
+    "image": "/arcjet.jpg",
+    "category": ["Ratelimit", "Security"],
+    "tags": ["rate limiting", "security", "bot protection", "API"],
+    "website": "https://arcjet.com",
+    "github": "https://github.com/arcjet/arcjet",
+    "pricing": {
+      "model": "pay-as-you-go"
     }
   },
   {
     "slug": "unkey",
     "name": "Unkey",
-    "description": "Serverless functions offer a ton of benefits but unfortunately make some things much harder too. Ratelimiting is one of these things as it requires some persistent state to coordinate different limits. Unkey’s ratelimit API provides a global low latency solution to limit your functions and protect upstream services.",
+    "description": "Serverless functions offer a ton of benefits but unfortunately make some things much harder too. Ratelimiting is one of these things as it requires some persistent state to coordinate different limits. Unkey's ratelimit API provides a global low latency solution to limit your functions and protect upstream services.",
     "shortDescription": "Fast global ratelimiting in serverless functions.",
     "image": "/unkey.jpg",
     "category": ["Ratelimit", "Serverless"],

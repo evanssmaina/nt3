@@ -1,4 +1,5 @@
 "use client";
+
 import { PlusIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -119,11 +120,7 @@ export function Menu() {
         </div>
       </ScrollArea>
       <Separator className="my-4" />
-      <a
-        href="https://github.com/evanssmaina/nt3"
-        rel="noreferrer"
-        target="_blank"
-      >
+      <a href="https://github.com/nt3ai/nt3" rel="noreferrer" target="_blank">
         <Button
           className="w-full bg-[#F5F5F3]/30 text-black border border-black rounded-full items-center justify-center gap-2 font-medium hidden md:flex dark:text-white dark:border-white"
           variant="outline"

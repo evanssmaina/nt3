@@ -1,45 +1,20 @@
-import {
-  ArrowLeftIcon,
-  ArrowRightIcon,
-  ArrowUpRightIcon,
-  DollarSign,
-  Tag,
-} from "lucide-react";
+import { ArrowUpRightIcon } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ToolCard } from "@/components/tool-card";
 import { Button } from "@/components/ui/button";
-import { siteConfig } from "@/config/site";
-import {
-  getAllCategories,
-  getToolBySlug,
-  getToolsByCategory,
-} from "@/lib/tools";
+import { getAllSlugs, getToolBySlug, getToolsByCategory } from "@/lib/tools";
 
 interface ToolPageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  const categories = getAllCategories();
-  // For now, we'll generate static params for known tools
-  // In production, you'd fetch all tool slugs
-  const tools = [
-    "langchain",
-    "pinecone",
-    "vercel-ai-sdk",
-    "openai",
-    "anthropic-claude",
-    "qdrant",
-    "weaviate",
-    "llamaindex",
-    "chroma",
-    "supabase-vectors",
-  ];
+  const slugs = getAllSlugs();
 
-  return tools.map((slug) => ({ slug }));
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({

@@ -13,10 +13,6 @@ export default function Header() {
       label: "Tools",
     },
     {
-      href: "/resources",
-      label: "Resources",
-    },
-    {
       href: "/about",
       label: "About",
     },
