@@ -1,8 +1,9 @@
-import { ArrowUpRightIcon } from "lucide-react";
+import { ArrowLeftIcon, ArrowUpRightIcon } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FadeInOutWrapper } from "@/components/motion-wrappers";
 import { ToolCard } from "@/components/tool-card";
 import { Button } from "@/components/ui/button";
 import { getAllSlugs, getToolBySlug, getToolsByCategory } from "@/lib/tools";
@@ -43,10 +44,22 @@ export default async function ToolPage({ params }: ToolPageProps) {
     notFound();
   }
 
-  const relatedTools = getToolsByCategory(tool?.category);
+  // Get related tools by checking all categories of the current tool
+  const relatedTools = Array.isArray(tool.category)
+    ? tool.category.flatMap((cat) => getToolsByCategory(cat))
+    : getToolsByCategory(tool.category);
+
+  // Remove duplicates and the current tool
+  const uniqueRelatedTools = Array.from(
+    new Map(
+      relatedTools
+        .filter((t) => t.slug !== tool.slug)
+        .map((tool) => [tool.slug, tool])
+    ).values()
+  );
 
   return (
-    <div className="container max-w-5xl mx-auto px-4 py-8 p">
+    <FadeInOutWrapper className="container max-w-5xl mx-auto">
       <div className="my-8 w-full">
         <div className="flex items-start justify-between gap-6 ">
           <div className="flex items-center justify-between w-full">
@@ -72,7 +85,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Button>
+              <Button className="cursor-pointer">
                 Visit
                 <ArrowUpRightIcon />
               </Button>
@@ -150,7 +163,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
             {tool.tags.map((tag) => (
               <Link
                 className="px-3 py-1 text-sm rounded-md bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-colors"
-                href={`/tools?search=${encodeURIComponent(tag)}`}
+                href={`/?q=${encodeURIComponent(tag)}`}
                 key={tag}
               >
                 {tag}
@@ -163,14 +176,11 @@ export default async function ToolPage({ params }: ToolPageProps) {
       <div className="my-8">
         <h3 className="text-lg font-medium mb-2">Related Tools</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-          {relatedTools
-            .filter((t) => t.slug !== slug)
-            .slice(0, 3)
-            .map((tool) => (
-              <ToolCard key={tool.slug} tool={tool} />
-            ))}
+          {uniqueRelatedTools.slice(0, 3).map((tool) => (
+            <ToolCard key={tool.slug} tool={tool} />
+          ))}
         </div>
       </div>
-    </div>
+    </FadeInOutWrapper>
   );
 }

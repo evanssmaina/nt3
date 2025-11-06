@@ -143,6 +143,26 @@
     }
   },
   {
+    "slug": "helix-db",
+    "name": "HelixDB",
+    "description": "HelixDB is a database that makes it easy to build all the components needed for an AI application in a single platform. You no longer need a separate application DB, vector DB, graph DB, or application layers to manage the multiple storage locations to build the backend of any application that uses AI, agents or RAG. Just use Helix. HelixDB primarily operates with a graph + vector data model, but it can also support KV, documents, and relational data.",
+    "shortDescription": "An open-source graph-vector database built in Rust.",
+    "image": "/helixdb.jpg",
+    "category": ["Vector"],
+    "tags": [
+      "Vector Database",
+      "RAG",
+      "Semantic Search",
+      "Embeddings",
+      "Graphs"
+    ],
+    "website": "https://www.helix-db.com",
+    "github": "https://github.com/HelixDB/helix-db",
+    "pricing": {
+      "model": "open-source"
+    }
+  },
+  {
     "slug": "ai-sdk",
     "name": "AI SDK",
     "description": "The AI SDK makes it easy to build AI-powered applications with React, Vue, Svelte, and Node. Provides a unified API for streaming, tools, and more.",
@@ -365,9 +385,9 @@
   {
     "slug": "semantic-kernel",
     "name": "Semantic Kernel",
-    "description": "Microsoft's open-source orchestration SDK for integrating AI models, tools, and agents in applications.",
+    "description": "Semantic Kernel is a lightweight, open-source development kit that lets you easily build AI agents and integrate the latest AI models into your C#, Python, or Java codebase. It serves as an efficient middleware that enables rapid delivery of enterprise-grade solutions.",
     "shortDescription": "AI orchestration SDK",
-    "image": "/semantic-kernel.png",
+    "image": "/microsoft.jpg",
     "category": ["SDK", "Framework"],
     "tags": ["Microsoft", "Orchestration", "C#", ".NET", "Python"],
     "website": "https://learn.microsoft.com/en-us/semantic-kernel",
@@ -1159,10 +1179,10 @@
   {
     "slug": "vespa",
     "name": "Vespa",
-    "description": "Open-source big data serving engine for AI retrieval, recommendation, and search applications.",
-    "shortDescription": "Big data serving for AI",
-    "image": "/vespa.png",
-    "category": ["Vector Database", "Search"],
+    "description": "Vespa.ai is an AI Search Platform for developing and operating large-scale applications that combine big data, vector search, machine-learned ranking, and real-time inference. With native tensor support for complex ranking and decisioning, Vespa enables real-time AI applications like RAG, recommendation, and intelligent search—at enterprise scale.",
+    "shortDescription": "Vectors/tensors, full-text, structured data; ML model inference at scale.",
+    "image": "/vespaai.jpg",
+    "category": ["Vector", "Web", "LLM"],
     "tags": ["Search Engine", "Recommendations", "Open Source", "Java"],
     "website": "https://vespa.ai",
     "github": "https://github.com/vespa-engine/vespa",
@@ -1360,10 +1380,10 @@
   {
     "slug": "novita",
     "name": "Novita AI",
-    "description": "API provider for fast and cost-effective LLM inference.",
-    "shortDescription": "Cost-effective LLM API",
+    "description": "Ship models and agents in minutes, call 200+ models with one API, and run secure, fast agent sandboxes— developer-first and startup-friendly.",
+    "shortDescription": "AI & Agent Cloud for Developers",
     "image": "/novita.png",
-    "category": ["API", "Image Generation"],
+    "category": ["API", "LLM"],
     "tags": ["Inference", "API", "Cost-Effective", "Scalable"],
     "website": "https://novita.ai",
     "pricing": {

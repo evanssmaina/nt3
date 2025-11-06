@@ -10,12 +10,12 @@ export function ToolCard({ tool }: ToolCardProps) {
   return (
     <Link
       className="group flex flex-col p-5 rounded-2xl border bg-card hover:bg-accent/50 transition-all "
-      href={`/tools/t/${tool.slug}`}
+      href={`/t/${tool.slug}`}
     >
       <div className="flex items-center mb-3 gap-3">
         <Image
           alt={tool.name}
-          className="rounded-sm border object-cover"
+          className="rounded-lg border object-cover"
           height={40}
           src={tool.image ? `/logos${tool.image}` : "/logos/ai-sdk.png"}
           width={40}
@@ -24,7 +24,7 @@ export function ToolCard({ tool }: ToolCardProps) {
           {tool.name}
         </h3>
       </div>
-      <p className="text-muted-foreground text-base mb-4 line-clamp-3 flex-1">
+      <p className="text-muted-foreground lg:text-base text-sm mb-4 line-clamp-3 flex-1">
         {tool.shortDescription || tool.description}
       </p>
       <div className="space-y-3">

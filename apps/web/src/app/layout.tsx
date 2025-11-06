@@ -67,7 +67,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "font-sans antialiased whitespace-pre-line bg-background text-foreground",
+          "font-sans antialiased whitespace bg-background text-foreground",
           geistSans.variable,
           geistMono.variable
         )}

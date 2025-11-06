@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useSelectedLayoutSegment } from "next/navigation";
+import { Button } from "./ui/button";
 
 export default function Header() {
   const pathname = usePathname();
@@ -9,17 +10,13 @@ export default function Header() {
 
   const links = [
     {
-      href: "/tools",
-      label: "Tools",
-    },
-    {
       href: "/about",
       label: "About",
     },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 border-b">
+    <header className="fixed top-0 left-0 right-0 z-20 bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 border-b">
       <div className=" mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
           <Link href="/">

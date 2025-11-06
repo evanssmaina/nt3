@@ -1,137 +1,167 @@
 "use client";
 
-import { PlusIcon } from "lucide-react";
+import { Menu as MenuIcon, PlusIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
-
-const allSections = [
-  {
-    slug: "caching",
-    tag: "Caching",
-  },
-  {
-    slug: "database",
-    tag: "Database",
-  },
-  {
-    slug: "ide",
-    tag: "IDE",
-  },
-  {
-    slug: "workflows",
-    tag: "Workflows",
-  },
-  {
-    slug: "ui",
-    tag: "UI Components",
-  },
-  {
-    slug: "deployment",
-    tag: "Deployment",
-  },
-  {
-    slug: "monitoring",
-    tag: "Monitoring",
-  },
-  {
-    slug: "llm",
-    tag: "LLM Providers",
-  },
-  {
-    slug: "agents",
-    tag: "Agents",
-  },
-  {
-    slug: "mcp",
-    tag: "MCP",
-  },
-  {
-    slug: "web",
-    tag: "Web Search",
-  },
-  {
-    slug: "coding",
-    tag: "Coding",
-  },
-  {
-    slug: "framework",
-    tag: "Framework",
-  },
-  {
-    slug: "api",
-    tag: "API",
-  },
-  {
-    slug: "storage",
-    tag: "Storage",
-  },
-  {
-    slug: "ratelimit",
-    tag: "Rate Limiting",
-  },
-  {
-    slug: "payments",
-    tag: "Payments",
-  },
-  {
-    slug: "vector",
-    tag: "Vector",
-  },
-
-  {
-    slug: "memory",
-    tag: "Memory Management",
-  },
-];
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { allSections } from "@/data/sections";
+import { useMediaQuery } from "@/hooks/use-media-query";
+import { cn } from "@/lib/utils";
 
 export function Menu() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
-  return (
-    <aside className="w-64 p-4 flex flex-col border-r">
-      <ScrollArea className="grow">
-        <div className="gap-y-6">
-          <Link href="/tools">
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
+  // Desktop sidebar
+  if (isDesktop) {
+    return (
+      <aside className="sticky top-0 left-0 w-64 h-screen flex flex-col bg-background border-r pt-12">
+        <div className="p-4 flex flex-col h-full">
+          <Link href="/">
             <Button
-              className="w-full justify-start font-semibold"
-              variant={pathname === "/tools" ? "secondary" : "ghost"}
+              className={cn(
+                "w-full justify-start text-base cursor-pointer",
+                pathname === "/" && "bg-blue-100 text-blue-700 hover:bg-blue-50"
+              )}
+              variant={pathname === "/" ? "secondary" : "ghost"}
             >
-              All
+              All tools
             </Button>
           </Link>
-          <Separator className="my-2" />
-          {allSections
-            .slice()
-            .sort((a, b) => a.tag.localeCompare(b.tag))
-            .map((section) => {
-              const isActive = pathname.startsWith(`/tools/${section.slug}`);
 
-              return (
-                <Link href={`/tools/${section.slug}`} key={section.tag}>
-                  <Button
-                    className="w-full justify-start cursor-pointer text-base"
-                    size={"lg"}
-                    variant={isActive ? "secondary" : "ghost"}
-                  >
-                    {section.tag}
-                  </Button>
-                </Link>
-              );
-            })}
+          <Separator className="my-2" />
+
+          <ScrollArea className="flex-1 overflow-y-auto">
+            <div className="space-y-1">
+              {allSections
+                .slice()
+                .sort((a, b) => a.tag.localeCompare(b.tag))
+                .map((section) => {
+                  const isActive = pathname === `/${section.slug}`;
+                  return (
+                    <Link href={`/${section.slug}`} key={section.tag}>
+                      <Button
+                        className={cn(
+                          "w-full justify-start cursor-pointer text-base gap-2",
+                          isActive &&
+                            "bg-blue-100 text-blue-700 hover:bg-blue-50"
+                        )}
+                        size={"lg"}
+                        variant={isActive ? "secondary" : "ghost"}
+                      >
+                        <section.icon className="h-4 w-4" />
+                        {section.tag}
+                      </Button>
+                    </Link>
+                  );
+                })}
+            </div>
+          </ScrollArea>
+
+          <div className="mt-auto">
+            <Separator className="my-2" />
+            <Link
+              href="https://github.com/nt3ai/nt3"
+              passHref
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Button
+                className="w-full bg-[#F5F5F3]/30 text-black border border-black rounded-full items-center justify-center gap-2 font-medium flex dark:text-white dark:border-white"
+                variant="outline"
+              >
+                <span>Submit</span> <PlusIcon className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
         </div>
-      </ScrollArea>
-      <Separator className="my-4" />
-      <a href="https://github.com/nt3ai/nt3" rel="noreferrer" target="_blank">
+      </aside>
+    );
+  }
+
+  // Mobile sheet
+  return (
+    <Sheet onOpenChange={setIsOpen} open={isOpen}>
+      <SheetTrigger asChild>
         <Button
-          className="w-full bg-[#F5F5F3]/30 text-black border border-black rounded-full items-center justify-center gap-2 font-medium hidden md:flex dark:text-white dark:border-white"
+          className="fixed bottom-4 right-4 z-50 rounded-full w-12 h-12 shadow-lg"
+          size="icon"
           variant="outline"
         >
-          <span>Submit</span> <PlusIcon className="w-4 h-4" />
+          <MenuIcon className="h-6 w-6" />
         </Button>
-      </a>
-    </aside>
+      </SheetTrigger>
+      <SheetContent className="w-64 p-0" side="left">
+        <div className="p-4 flex flex-col h-full pt-12">
+          <Link href="/">
+            <Button
+              className={cn(
+                "w-full justify-start text-base cursor-pointer",
+                pathname === "/" && "bg-blue-100 text-blue-700 hover:bg-blue-50"
+              )}
+              variant={pathname === "/" ? "secondary" : "ghost"}
+            >
+              All tools
+            </Button>
+          </Link>
+
+          <Separator className="my-2" />
+
+          <ScrollArea className="flex-1 overflow-y-auto">
+            <div className="space-y-1">
+              {allSections
+                .slice()
+                .sort((a, b) => a.tag.localeCompare(b.tag))
+                .map((section) => {
+                  const isActive = pathname === `/${section.slug}`;
+                  return (
+                    <Link href={`/${section.slug}`} key={section.tag}>
+                      <Button
+                        className={cn(
+                          "w-full justify-start cursor-pointer text-base gap-2",
+                          isActive &&
+                            "bg-blue-100 text-blue-700 hover:bg-blue-50"
+                        )}
+                        size={"lg"}
+                        variant={isActive ? "secondary" : "ghost"}
+                      >
+                        <section.icon className="h-4 w-4" />
+                        {section.tag}
+                      </Button>
+                    </Link>
+                  );
+                })}
+            </div>
+          </ScrollArea>
+
+          <div className="mt-auto">
+            <Separator className="my-2" />
+            <Link
+              href="https://github.com/nt3ai/nt3"
+              passHref
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Button
+                className="w-full cursor-pointer bg-[#F5F5F3]/30 text-black border border-black rounded-full items-center justify-center gap-2 font-medium flex dark:text-white dark:border-white"
+                variant="outline"
+              >
+                <span>Submit</span> <PlusIcon className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </SheetContent>
+    </Sheet>
   );
 }

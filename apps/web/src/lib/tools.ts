@@ -11,11 +11,17 @@ export function getToolsByCategory(category: ToolCategory | "all"): Tool[] {
   if (category === "all") {
     return tools;
   }
-  return tools.filter((tool) =>
-    Array.isArray(tool.category)
-      ? tool.category.includes(category)
-      : tool.category === category
-  );
+  
+  const lowerCategory = typeof category === 'string' ? category.toLowerCase() : String(category).toLowerCase();
+  
+  return tools.filter((tool) => {
+    if (Array.isArray(tool.category)) {
+      return tool.category.some(
+        (cat) => String(cat).toLowerCase() === lowerCategory
+      );
+    }
+    return String(tool.category).toLowerCase() === lowerCategory;
+  });
 }
 
 export function getAllCategories(): ToolCategory[] {

@@ -19,30 +19,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/tools`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.9,
-    },
   ];
 
   // Dynamic tool pages
   const toolPages: MetadataRoute.Sitemap = tools.map((tool) => ({
-    url: `${baseUrl}/tools/${tool.slug}`,
+    url: `${baseUrl}/${tool.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.7,
   }));
 
-  // Dynamic category pages
-  const categories = getAllCategories();
-  const categoryPages: MetadataRoute.Sitemap = categories.map((category) => ({
-    url: `${baseUrl}/categories/${category.toLowerCase().replace(/\s+/g, "-")}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.6,
-  }));
-
-  return [...staticPages, ...toolPages, ...categoryPages];
+  return [...staticPages, ...toolPages];
 }

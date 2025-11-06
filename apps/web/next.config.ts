@@ -5,15 +5,6 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/tools",
-        permanent: false,
-      },
-    ];
-  },
 };
 
 export default nextConfig;
