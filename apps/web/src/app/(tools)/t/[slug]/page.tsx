@@ -1,4 +1,4 @@
-import { ArrowLeftIcon, ArrowUpRightIcon } from "lucide-react";
+import { ArrowUpRightIcon } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -85,7 +85,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Button className="cursor-pointer">
+              <Button className="cursor-pointer" size={"sm"}>
                 Visit
                 <ArrowUpRightIcon />
               </Button>
@@ -122,6 +122,18 @@ export default async function ToolPage({ params }: ToolPageProps) {
                   <ArrowUpRightIcon className="size-3.5" />
                 </Link>
               )}
+              {tool.docs && (
+                <Link
+                  className="flex gap-2 items-center text-muted-foreground hover:text-foreground transition-colors"
+                  href={tool.docs}
+                  passHref
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Docs
+                  <ArrowUpRightIcon className="size-3.5" />
+                </Link>
+              )}
               {tool.github && (
                 <Link
                   className="flex gap-2 items-center text-muted-foreground hover:text-foreground transition-colors"
@@ -138,6 +150,22 @@ export default async function ToolPage({ params }: ToolPageProps) {
           ) : null}
         </div>
       </div>
+
+      {tool.languages && (
+        <div className="my-8">
+          <h3 className="text-lg font-medium mb-2">Languages</h3>
+          <div className="flex flex-wrap gap-2">
+            {tool.languages.map((language) => (
+              <div
+                className="px-3 py-1 text-sm rounded-md bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-colors"
+                key={language}
+              >
+                {language}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {tool.pricing && (
         <div className="my-8">
@@ -173,14 +201,16 @@ export default async function ToolPage({ params }: ToolPageProps) {
         </div>
       )}
 
-      <div className="my-8">
-        <h3 className="text-lg font-medium mb-2">Related Tools</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-          {uniqueRelatedTools.slice(0, 3).map((tool) => (
-            <ToolCard key={tool.slug} tool={tool} />
-          ))}
+      {uniqueRelatedTools.length > 0 && (
+        <div className="my-8">
+          <h3 className="text-lg font-medium mb-2">Related Tools</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            {uniqueRelatedTools.slice(0, 3).map((tool) => (
+              <ToolCard key={tool.slug} tool={tool} />
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </FadeInOutWrapper>
   );
 }

@@ -1,18 +1,18 @@
 "use client";
 
-import { useQueryState } from "nuqs";
-import { useCallback, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { ToolCard } from "@/components/tool-card";
+import { useToolsFilterParams } from "@/hooks/use-tools-filter-params";
 import { tools } from "@/lib/tools";
 import { ToolCategory } from "@/lib/types";
-import { SearchInputFilter } from "./search-input-filter";
+import { ToolFilters } from "./tool-filters";
 
 export function ToolsList({
   category = "all",
 }: {
   category: ToolCategory | "all";
 }) {
-  const [searchQuery, setSearchQuery] = useQueryState("q");
+  const { filters } = useToolsFilterParams();
 
   const filteredTools = useMemo(() => {
     let filtered = tools;
@@ -30,8 +30,8 @@ export function ToolsList({
       );
     }
 
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase();
+    if (filters.q) {
+      const query = filters.q.toLowerCase();
       filtered = filtered.filter(
         (tool) =>
           tool.name.toLowerCase().includes(query) ||
@@ -40,35 +40,33 @@ export function ToolsList({
       );
     }
 
+    if (filters.language.length > 0) {
+      const selectedLanguages = filters.language.map((lang) =>
+        lang.toLowerCase()
+      );
+      filtered = filtered.filter((tool) =>
+        tool.languages?.some((lang) =>
+          selectedLanguages.includes(lang.toLowerCase())
+        )
+      );
+    }
+
+    if (filters.pricing.length > 0) {
+      const selectedPricing = filters.pricing.map((p) => p.toLowerCase());
+      filtered = filtered.filter((tool) =>
+        selectedPricing.includes(tool.pricing?.model.toLowerCase() || "")
+      );
+    }
+
     // Sort alphabetically by name
     return filtered.sort((a, b) => a.name.localeCompare(b.name));
-  }, [category, searchQuery]);
-
-  const handleSearchChange = useCallback(
-    (value: string) => {
-      setSearchQuery(value);
-    },
-    [searchQuery, setSearchQuery]
-  );
-
-  const handleClear = useCallback(() => {
-    setSearchQuery(null);
-  }, [searchQuery, setSearchQuery]);
+  }, [category, filters]);
 
   return (
     <>
       {/* Filters and Search */}
       <div className="mb-6 space-y-4">
-        <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
-          <div className="flex-1 w-full">
-            <SearchInputFilter
-              onChange={handleSearchChange}
-              onClear={handleClear}
-              placeholder="Search by name, description, or tag..."
-              value={searchQuery}
-            />
-          </div>
-        </div>
+        <ToolFilters />
       </div>
 
       {/* Tools Grid/List */}

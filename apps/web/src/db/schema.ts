@@ -1,4 +1,11 @@
-import { jsonb, pgTable, text, timestamp, varchar } from "drizzle-orm/pg-core";
+import {
+  boolean,
+  jsonb,
+  pgTable,
+  text,
+  timestamp,
+  varchar,
+} from "drizzle-orm/pg-core";
 
 const id = varchar({ length: 255 }).primaryKey();
 
@@ -13,6 +20,7 @@ export const companies = pgTable("companies", {
   id,
   name: varchar({ length: 255 }).notNull(),
   description: text(),
+  verfied: boolean().default(false),
   website: text().notNull(),
   xUrl: text(),
   createdAt: timestamp({ mode: "string", withTimezone: true }).notNull(),
@@ -29,9 +37,9 @@ export const tools = pgTable("tools", {
   description: text().notNull(),
   imageIconUrl: text().notNull(),
   website: text().notNull(),
-  githubUrl: text(),
+  repoUrl: text(),
   docsUrl: text(),
   categories: jsonb().notNull(),
-  languagesSupported: jsonb().default([]).notNull(),
+  languages: jsonb().default([]).notNull(),
   createdAt: timestamp({ mode: "string", withTimezone: true }).notNull(),
 });

@@ -20,6 +20,8 @@ export interface Tool {
   logo?: string;
   website?: string;
   image?: string;
+  languages?: string[];
+  docs?: string;
   github?: string;
   pricing?: {
     model: "free" | "paid" | "freemium" | "open-source";

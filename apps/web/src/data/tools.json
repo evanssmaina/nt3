@@ -7,6 +7,7 @@
     "image": "/langchain.jpg",
     "category": ["Framework", "Agents"],
     "tags": ["LangChain", "OpenAI", "LLM", "Python", "JavaScript"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://www.langchain.com",
     "github": "https://github.com/langchain-ai/langchain",
     "pricing": {
@@ -21,6 +22,7 @@
     "image": "/cursor.jpg",
     "category": ["IDE", "Coding"],
     "tags": ["IDE", "AI Coding", "Code Editor"],
+    "languages": ["Multi-language support"],
     "website": "https://www.cursor.com",
     "pricing": {
       "model": "freemium"
@@ -34,6 +36,7 @@
     "image": "/tavily.jpg",
     "category": ["API", "Web"],
     "tags": ["Search", "AI Search", "Semantic Search", "API"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://www.tavily.com",
     "pricing": {
       "model": "freemium"
@@ -47,6 +50,7 @@
     "image": "/exa.jpg",
     "category": ["API", "Web"],
     "tags": ["Search", "AI Search", "Semantic Search", "API"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://www.exa.ai",
     "pricing": {
       "model": "freemium"
@@ -65,6 +69,7 @@
       "Pull Requests",
       "Quality Assurance"
     ],
+    "languages": ["Multi-language support"],
     "website": "https://www.coderabbit.ai",
     "pricing": {
       "model": "freemium"
@@ -84,6 +89,7 @@
       "API",
       "Inference"
     ],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://fal.ai",
     "pricing": {
       "model": "freemium"
@@ -97,6 +103,7 @@
     "image": "/supermemory.jpg",
     "category": ["Memory"],
     "tags": ["Context Management", "Memory", "RAG", "Personalization"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://supermemory.ai",
     "pricing": {
       "model": "freemium"
@@ -110,6 +117,7 @@
     "image": "/mem0.png",
     "category": ["Memory"],
     "tags": ["Context Management", "Memory", "RAG", "Personalization"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://mem0.ai",
     "pricing": {
       "model": "freemium"
@@ -123,6 +131,7 @@
     "image": "/windsurf.jpg",
     "category": ["Coding"],
     "tags": ["IDE", "AI Coding", "Agentic AI"],
+    "languages": ["Multi-language support"],
     "website": "https://windsurf.ai",
     "pricing": {
       "model": "freemium"
@@ -136,6 +145,7 @@
     "image": "/pinecone.png",
     "category": ["Vector"],
     "tags": ["Vector Database", "RAG", "Semantic Search", "Embeddings"],
+    "languages": ["Python", "JavaScript", "TypeScript", "Go", "Java"],
     "website": "https://www.pinecone.io",
     "pricing": {
       "model": "freemium",
@@ -156,6 +166,7 @@
       "Embeddings",
       "Graphs"
     ],
+    "languages": ["Rust", "Python", "JavaScript", "TypeScript"],
     "website": "https://www.helix-db.com",
     "github": "https://github.com/HelixDB/helix-db",
     "pricing": {
@@ -170,6 +181,8 @@
     "image": "/ai-sdk.png",
     "category": ["Framework", "SDK", "Agents"],
     "tags": ["Vercel", "React", "Streaming", "OpenAI", "Anthropic"],
+    "languages": ["TypeScript", "JavaScript"],
+    "frameworks": ["Next.js", "React", "Vue", "Svelte", "Node.js"],
     "website": "https://sdk.vercel.ai",
     "github": "https://github.com/vercel/ai",
     "pricing": {
@@ -184,6 +197,8 @@
     "image": "/ai-sdk-tools.png",
     "category": ["Framework", "Memory", "Agents"],
     "tags": ["React", "Streaming", "OpenAI", "Anthropic"],
+    "languages": ["TypeScript", "JavaScript"],
+    "frameworks": ["React", "Next.js"],
     "website": "https://ai-sdk-tools.dev",
     "github": "https://github.com/midday-ai/ai-sdk-tools",
     "pricing": {
@@ -198,6 +213,16 @@
     "shortDescription": "Access to GPT-4 and other powerful AI models",
     "category": ["LLM", "API"],
     "tags": ["OpenAI", "GPT-4", "GPT-3.5", "Embeddings", "API"],
+    "languages": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Go",
+      "Java",
+      "C#",
+      "Ruby",
+      "PHP"
+    ],
     "website": "https://platform.openai.com",
     "pricing": {
       "model": "paid",
@@ -212,6 +237,7 @@
     "shortDescription": "Advanced AI assistant with long context windows",
     "category": ["LLM", "API"],
     "tags": ["Anthropic", "Claude", "API", "Long Context"],
+    "languages": ["Python", "JavaScript", "TypeScript", "Go", "Java"],
     "website": "https://www.anthropic.com",
     "pricing": {
       "model": "paid",
@@ -226,6 +252,7 @@
     "shortDescription": "Serverless Postgres Database",
     "category": ["Database", "Vector"],
     "tags": ["Postgres", "Serverless", "AI Database", "Vector"],
+    "languages": ["SQL", "Python", "JavaScript", "TypeScript", "Go", "Rust"],
     "website": "https://neon.tech",
     "pricing": {
       "model": "freemium"
@@ -239,6 +266,7 @@
     "shortDescription": "High-performance Rust-based vector search engine.",
     "category": ["Vector", "Database"],
     "tags": ["Vector Database", "Open Source", "RAG", "Semantic Search"],
+    "languages": ["Rust", "Python", "JavaScript", "TypeScript", "Go", "Java"],
     "website": "https://qdrant.tech",
     "github": "https://github.com/qdrant/qdrant",
     "pricing": {
@@ -253,6 +281,7 @@
     "shortDescription": "The backend platform she tells you not to worry about.",
     "category": ["Database", "Backend"],
     "tags": ["Convex", "Open Source", "RAG", "Real-Time"],
+    "languages": ["TypeScript", "JavaScript", "Python"],
     "website": "https://convex.dev",
     "github": "https://github.com/convex-dev/convex",
     "pricing": {
@@ -267,6 +296,15 @@
     "shortDescription": "The fastest and most reliable database for Postgres & Vitess",
     "category": ["Database", "Vector"],
     "tags": ["Planetscale", "Postgres", "Vitess", "Database"],
+    "languages": [
+      "SQL",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Go",
+      "Java",
+      "Ruby"
+    ],
     "website": "https://planetscale.com",
     "github": "https://github.com/planetscale/planetscale",
     "pricing": {
@@ -281,6 +319,7 @@
     "category": ["Vector", "Search"],
     "image": "/weavite.jpg",
     "tags": ["Vector Database", "Open Source", "GraphQL", "RAG"],
+    "languages": ["Go", "Python", "JavaScript", "TypeScript", "Java"],
     "website": "https://weaviate.io",
     "github": "https://github.com/weaviate/weaviate",
     "pricing": {
@@ -295,6 +334,7 @@
     "shortDescription": "AI Agents for document OCR + workflows",
     "category": ["Framework", "RAG"],
     "tags": ["LlamaIndex", "RAG", "Data Ingestion"],
+    "languages": ["Python", "TypeScript"],
     "website": "https://www.llamaindex.ai",
     "github": "https://github.com/run-llama/llama_index",
     "pricing": {
@@ -309,6 +349,7 @@
     "shortDescription": "Vector similarity search with Postgres",
     "category": ["Vector"],
     "tags": ["Supabase", "Postgres", "pgvector", "Vector Database"],
+    "languages": ["SQL", "JavaScript", "TypeScript", "Python", "Dart"],
     "website": "https://supabase.com/docs/guides/ai",
     "pricing": {
       "model": "freemium"
@@ -322,6 +363,15 @@
     "shortDescription": "Postgres extension for vector similarity search",
     "category": ["Database", "Backend"],
     "tags": ["Supabase", "Postgres", "pgvector", "Vector Database"],
+    "languages": [
+      "SQL",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Dart",
+      "Swift",
+      "Kotlin"
+    ],
     "website": "https://supabase.com/database",
     "pricing": {
       "model": "freemium"
@@ -335,6 +385,14 @@
     "shortDescription": "Postgres extension for vector similarity search",
     "category": ["Storage"],
     "tags": ["Supabase", "Storage"],
+    "languages": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Dart",
+      "Swift",
+      "Kotlin"
+    ],
     "website": "https://supabase.com/storage",
     "pricing": {
       "model": "freemium"
@@ -348,6 +406,7 @@
     "image": "/microsoft.jpg",
     "category": ["Framework", "Agents"],
     "tags": ["Multi-Agent", "Conversational AI", "Microsoft", "Python"],
+    "languages": ["Python"],
     "website": "https://microsoft.github.io/autogen",
     "github": "https://github.com/microsoft/autogen",
     "pricing": {
@@ -362,6 +421,7 @@
     "image": "/crewai.jpg",
     "category": ["Framework", "Agents"],
     "tags": ["Multi-Agent", "AI Agents", "Task Automation", "Python"],
+    "languages": ["Python"],
     "website": "https://crewai.com",
     "github": "https://github.com/joaomdmoura/crewAI",
     "pricing": {
@@ -376,6 +436,7 @@
     "image": "/langgraph.png",
     "category": ["Framework"],
     "tags": ["LangChain", "Graphs", "Stateful Agents", "Python"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://langchain-ai.github.io/langgraph",
     "github": "https://github.com/langchain-ai/langgraph",
     "pricing": {
@@ -390,6 +451,7 @@
     "image": "/microsoft.jpg",
     "category": ["SDK", "Framework"],
     "tags": ["Microsoft", "Orchestration", "C#", ".NET", "Python"],
+    "languages": ["C#", "Python", "Java"],
     "website": "https://learn.microsoft.com/en-us/semantic-kernel",
     "github": "https://github.com/microsoft/semantic-kernel",
     "pricing": {
@@ -409,6 +471,7 @@
       "Similarity Search",
       "Embeddings"
     ],
+    "languages": ["Python", "Go", "Java", "Node.js"],
     "website": "https://milvus.io",
     "github": "https://github.com/milvus-io/milvus",
     "pricing": {
@@ -423,6 +486,15 @@
     "image": "/gemini.png",
     "category": ["LLM", "API"],
     "tags": ["Google", "Gemini", "API", "Multimodal"],
+    "languages": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Go",
+      "Java",
+      "Kotlin",
+      "Swift"
+    ],
     "website": "https://aistudio.google.com",
     "pricing": {
       "model": "paid",
@@ -437,6 +509,7 @@
     "image": "/mistral.png",
     "category": ["LLM", "Open Source"],
     "tags": ["Mistral", "Open Source Models", "API", "Fine-Tuning"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://mistral.ai",
     "pricing": {
       "model": "freemium"
@@ -450,6 +523,7 @@
     "image": "/llama.webp",
     "category": ["LLM", "Open Source"],
     "tags": ["Meta", "Llama", "Open Source", "Customization"],
+    "languages": ["Python", "C++"],
     "website": "https://llama.meta.com",
     "github": "https://github.com/meta-llama/llama",
     "pricing": {
@@ -464,6 +538,16 @@
     "image": "/redis.jpg",
     "category": ["Caching", "Database", "Vector", "Memory"],
     "tags": ["Caching", "Real-Time", "Vector Search", "Memory"],
+    "languages": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Java",
+      "Go",
+      "C#",
+      "Ruby",
+      "PHP"
+    ],
     "website": "https://redis.io",
     "github": "https://github.com/redis/redis",
     "pricing": {
@@ -478,6 +562,16 @@
     "image": "/mongodb.png",
     "category": ["Database"],
     "tags": ["NoSQL", "Vector Search", "Atlas", "Scalable"],
+    "languages": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Java",
+      "Go",
+      "C#",
+      "Ruby",
+      "PHP"
+    ],
     "website": "https://www.mongodb.com",
     "pricing": {
       "model": "freemium"
@@ -491,6 +585,7 @@
     "image": "/singlestore.png",
     "category": ["Database", "Analytics"],
     "tags": ["SQL", "Vector Support", "Real-Time", "Analytics"],
+    "languages": ["SQL", "Python", "JavaScript", "TypeScript", "Java", "Go"],
     "website": "https://www.singlestore.com",
     "pricing": {
       "model": "paid"
@@ -504,6 +599,7 @@
     "image": "/aws.jpg",
     "category": ["Infrastructure", "ML Ops"],
     "tags": ["AWS", "ML Training", "Deployment", "Scalable"],
+    "languages": ["Python", "R", "Java", "Scala"],
     "website": "https://aws.amazon.com/sagemaker",
     "pricing": {
       "model": "paid"
@@ -517,6 +613,7 @@
     "image": "/microsoft.jpg",
     "category": ["Infrastructure", "ML Ops"],
     "tags": ["Azure", "ML Workflows", "AutoML", "Integration"],
+    "languages": ["Python", "R", "C#"],
     "website": "https://azure.microsoft.com/en-us/products/machine-learning",
     "pricing": {
       "model": "paid"
@@ -530,6 +627,7 @@
     "image": "/google-cloud-ai.png",
     "category": ["Infrastructure", "ML Ops"],
     "tags": ["Google Cloud", "Vertex AI", "AutoML", "TPUs"],
+    "languages": ["Python", "Java", "Go", "Node.js"],
     "website": "https://cloud.google.com/ai",
     "pricing": {
       "model": "paid"
@@ -543,6 +641,7 @@
     "image": "/perplexity.avif",
     "category": ["API", "Web", "LLM"],
     "tags": ["Search", "AI Search", "Answer Engine", "API"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://perplexity.ai",
     "pricing": {
       "model": "freemium"
@@ -556,6 +655,7 @@
     "image": "/langfuse.jpg",
     "category": ["Monitoring", "Analytics"],
     "tags": ["Observability", "Tracing", "Evaluations", "Open Source"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://langfuse.com",
     "github": "https://github.com/langfuse/langfuse",
     "pricing": {
@@ -570,6 +670,7 @@
     "image": "/posthog.jpg",
     "category": ["Monitoring", "Analytics"],
     "tags": ["Observability", "Tracing", "Evaluations", "Open Source"],
+    "languages": ["Python", "JavaScript", "TypeScript", "Go", "Ruby", "PHP"],
     "website": "https://posthog.com",
     "github": "https://github.com/posthog/posthog",
     "pricing": {
@@ -584,6 +685,7 @@
     "image": "/upstash.png",
     "category": ["Caching", "Serverless"],
     "tags": ["Redis", "Serverless", "Caching", "Edge", "REST API", "Real-Time"],
+    "languages": ["JavaScript", "TypeScript", "Python", "Go"],
     "website": "https://upstash.com/redis",
     "github": "https://github.com/upstash/upstash-redis",
     "pricing": {
@@ -599,6 +701,7 @@
     "image": "/upstash.png",
     "category": ["Ratelimit", "Serverless"],
     "tags": ["Redis", "Serverless", "Caching", "Edge", "REST API", "Real-Time"],
+    "languages": ["JavaScript", "TypeScript", "Python", "Go"],
     "website": "https://upstash.com/redis",
     "github": "https://github.com/upstash/upstash-redis",
     "pricing": {
@@ -613,6 +716,7 @@
     "image": "/arcjet.jpg",
     "category": ["Ratelimit", "Security"],
     "tags": ["rate limiting", "security", "bot protection", "API"],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://arcjet.com",
     "github": "https://github.com/arcjet/arcjet",
     "pricing": {
@@ -627,6 +731,7 @@
     "image": "/unkey.jpg",
     "category": ["Ratelimit", "Serverless"],
     "tags": ["Serverless", "Edge", "REST API", "Real-Time"],
+    "languages": ["JavaScript", "TypeScript", "Python", "Go"],
     "website": "https://unkey.com",
     "github": "https://github.com/unkey/unkey",
     "pricing": {
@@ -648,6 +753,7 @@
       "REST API",
       "Real-Time"
     ],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://cloudflare.com",
     "github": "https://github.com/cloudflare/cloudflare-kv",
     "pricing": {
@@ -670,6 +776,7 @@
       "REST API",
       "Real-Time"
     ],
+    "languages": ["JavaScript", "TypeScript", "SQL"],
     "website": "https://cloudflare.com",
     "github": "https://github.com/cloudflare/cloudflare-kv",
     "pricing": {
@@ -680,11 +787,12 @@
   {
     "slug": "cloudflare-vecorize",
     "name": "Cloudflare Vecorize",
-    "description": "Begin building for free in minutes. Vectorize enables fast & cost-effective vector storage to power your search & AI Retrieval Augmented Generation (RAG) applications. Avoid tool sprawl & reduce total cost of ownership: Vectorize seamlessly integrates with Cloudflare’s AI developer platform-Workers AI and AI Gateway for centralized development, monitoring & control of AI applications on a global scale.",
+    "description": "Begin building for free in minutes. Vectorize enables fast & cost-effective vector storage to power your search & AI Retrieval Augmented Generation (RAG) applications. Avoid tool sprawl & reduce total cost of ownership: Vectorize seamlessly integrates with Cloudflare's AI developer platform-Workers AI and AI Gateway for centralized development, monitoring & control of AI applications on a global scale.",
     "shortDescription": "High speed, globally distributed and cost-efficient vector database.",
     "image": "/cloudflare.jpg",
     "category": ["Vector"],
     "tags": ["Cloudflare", "Vector", "Edge"],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://cloudflare.com",
     "github": "https://github.com/cloudflare/cloudflare-kv",
     "pricing": {
@@ -700,6 +808,7 @@
     "image": "/cloudflare.jpg",
     "category": ["Workflows"],
     "tags": ["Cloudflare", "Workflows", "Edge"],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://www.cloudflare.com/developer-platform/products/workflows/",
     "github": "https://github.com/cloudflare",
     "pricing": {
@@ -715,6 +824,7 @@
     "image": "/cloudflare.jpg",
     "category": ["Storage"],
     "tags": ["Cloudflare", "Edge", "Storage", "REST API", "Zero Egress"],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://www.cloudflare.com/developer-platform/products/r2/",
     "github": "https://github.com/cloudflare",
     "pricing": {
@@ -730,6 +840,7 @@
     "image": "/tigris.jpg",
     "category": ["Storage"],
     "tags": ["Tigris", "Global", "Storage", "REST API"],
+    "languages": ["Python", "JavaScript", "TypeScript", "Go", "Java"],
     "website": "https://tigrisdata.com",
     "github": "https://github.com/cloudflare/cloudflare-kv",
     "pricing": {
@@ -753,6 +864,7 @@
       "REST API",
       "Embeddings"
     ],
+    "languages": ["JavaScript", "TypeScript", "Python"],
     "website": "https://upstash.com/vector",
     "pricing": {
       "model": "freemium",
@@ -774,6 +886,7 @@
       "HTTP API",
       "Async"
     ],
+    "languages": ["JavaScript", "TypeScript", "Python"],
     "website": "https://upstash.com/qstash",
     "github": "https://github.com/upstash/qstash-js",
     "pricing": {
@@ -796,6 +909,7 @@
       "State Management",
       "Durable Execution"
     ],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://upstash.com/docs/workflow",
     "github": "https://github.com/upstash/workflow-js",
     "pricing": {
@@ -818,6 +932,7 @@
       "State Management",
       "Durable Execution"
     ],
+    "languages": ["JavaScript", "TypeScript", "Python", "Go"],
     "website": "https://www.inngest.com/",
     "pricing": {
       "model": "freemium",
@@ -832,6 +947,7 @@
     "image": "/evidently.png",
     "category": ["Monitoring", "ML Ops"],
     "tags": ["ML Monitoring", "Data Drift", "Python", "Open Source"],
+    "languages": ["Python"],
     "website": "https://evidentlyai.com",
     "github": "https://github.com/evidentlyai/evidently",
     "pricing": {
@@ -846,6 +962,7 @@
     "image": "/dynatrace.jpg",
     "category": ["Monitoring", "Observability"],
     "tags": ["Observability", "AIOps", "Cloud Monitoring", "LLM Monitoring"],
+    "languages": ["Multi-language support"],
     "website": "https://www.dynatrace.com",
     "pricing": {
       "model": "paid"
@@ -859,6 +976,7 @@
     "image": "/huggingface.jpg",
     "category": ["API", "LLM"],
     "tags": ["Model Hub", "Inference", "Spaces", "Open Source"],
+    "languages": ["Python", "JavaScript", "TypeScript", "Rust"],
     "website": "https://huggingface.co",
     "pricing": {
       "model": "freemium"
@@ -872,6 +990,7 @@
     "image": "/replicate.jpg",
     "category": ["LLM", "API"],
     "tags": ["ML Deployment", "API", "Scalable", "Cloud"],
+    "languages": ["Python", "JavaScript", "TypeScript", "Go"],
     "website": "https://replicate.com",
     "pricing": {
       "model": "paid",
@@ -893,6 +1012,8 @@
       "Open Source",
       "Deployment"
     ],
+    "languages": ["JavaScript", "TypeScript", "Python"],
+    "frameworks": ["Next.js", "React", "Vue", "Svelte"],
     "website": "https://vercel.com",
     "pricing": {
       "model": "freemium"
@@ -913,6 +1034,7 @@
       "Open Source",
       "Deployment"
     ],
+    "languages": ["Multi-language support"],
     "website": "https://fly.io",
     "pricing": {
       "model": "freemium"
@@ -926,6 +1048,7 @@
     "image": "/firecrawl.jpg",
     "category": ["Data", "Web"],
     "tags": ["Data", "LLM", "Open Source"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://firecrawl.dev",
     "pricing": {
       "model": "freemium"
@@ -939,6 +1062,7 @@
     "image": "/render.jpg",
     "category": ["Deployment", "Hosting"],
     "tags": ["Cloud Platform", "Web Apps", "APIs", "Databases", "Auto-scaling"],
+    "languages": ["Multi-language support"],
     "website": "https://render.com",
     "pricing": {
       "model": "freemium"
@@ -952,6 +1076,7 @@
     "image": "/xmcp.png",
     "category": ["MCP"],
     "tags": ["MCP", "TypeScript", "AI Integration", "Open Source"],
+    "languages": ["TypeScript", "JavaScript"],
     "website": "https://xmcp.dev",
     "pricing": {
       "model": "open-source"
@@ -965,6 +1090,7 @@
     "image": "/speakeasy.jpg",
     "category": ["MCP"],
     "tags": ["MCP", "Type Safety", "Developer Tools"],
+    "languages": ["TypeScript", "Python", "Go", "Java"],
     "website": "https://speakeasy.com",
     "pricing": {
       "model": "freemium"
@@ -984,6 +1110,7 @@
       "Audio AI",
       "API"
     ],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://elevenlabs.io",
     "pricing": {
       "model": "freemium"
@@ -997,6 +1124,7 @@
     "image": "/n8n.png",
     "category": ["Workflows", "Automation"],
     "tags": ["Workflow Automation", "No-Code", "AI Integration", "Open Source"],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://n8n.io",
     "pricing": {
       "model": "open-source"
@@ -1016,6 +1144,7 @@
       "Open Source",
       "Vercel"
     ],
+    "languages": ["TypeScript", "JavaScript"],
     "website": "https://useworkflow.dev",
     "pricing": {
       "model": "open-source"
@@ -1035,6 +1164,7 @@
       "Observability",
       "Open Source"
     ],
+    "languages": ["TypeScript", "JavaScript"],
     "website": "https://trigger.dev",
     "pricing": {
       "model": "freemium"
@@ -1048,6 +1178,7 @@
     "image": "/github-copilot.jpg",
     "category": ["IDE", "AI Coding"],
     "tags": ["Code Suggestion", "Microsoft", "VS Code", "Productivity"],
+    "languages": ["Multi-language support"],
     "website": "https://github.com/features/copilot",
     "pricing": {
       "model": "paid",
@@ -1062,6 +1193,7 @@
     "image": "/tabnine.png",
     "category": ["IDE", "AI Coding"],
     "tags": ["Code Completion", "Privacy-Focused", "Multi-IDE", "Enterprise"],
+    "languages": ["Multi-language support"],
     "website": "https://www.tabnine.com",
     "pricing": {
       "model": "freemium"
@@ -1075,6 +1207,7 @@
     "image": "/codeium.png",
     "category": ["IDE", "AI Coding"],
     "tags": ["Code Generation", "Free", "Multi-Language", "IDE Integration"],
+    "languages": ["Multi-language support"],
     "website": "https://codeium.com",
     "pricing": {
       "model": "free"
@@ -1088,6 +1221,7 @@
     "image": "/cohere.png",
     "category": ["API", "LLM"],
     "tags": ["Cohere", "Generative AI", "RAG", "Enterprise"],
+    "languages": ["Python", "JavaScript", "TypeScript", "Go", "Java"],
     "website": "https://cohere.com",
     "pricing": {
       "model": "paid"
@@ -1101,6 +1235,7 @@
     "image": "/groq.png",
     "category": ["API", "LLM"],
     "tags": ["Inference", "Low Latency", "Hardware-Optimized", "API"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://groq.com",
     "pricing": {
       "model": "paid",
@@ -1115,6 +1250,7 @@
     "image": "/togetherai.png",
     "category": ["API", "LLM"],
     "tags": ["Generative AI", "Open Models", "Inference", "Fine-Tuning"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://www.together.ai",
     "pricing": {
       "model": "paid"
@@ -1128,6 +1264,7 @@
     "image": "/haystack.png",
     "category": ["Framework", "Search"],
     "tags": ["RAG", "Search", "NLP", "Python"],
+    "languages": ["Python"],
     "website": "https://haystack.deepset.ai",
     "github": "https://github.com/deepset-ai/haystack",
     "pricing": {
@@ -1142,6 +1279,7 @@
     "image": "/agno.jpg",
     "category": ["Framework", "Agents"],
     "tags": ["AI Assistants", "Agents", "Memory", "Python"],
+    "languages": ["Python"],
     "website": "https://www.agno.com",
     "github": "https://github.com/agno-ai/agno",
     "pricing": {
@@ -1156,6 +1294,7 @@
     "image": "/composio.jpg",
     "category": ["Agents", "Tool Integration"],
     "tags": ["Tool Integration", "MCP", "Agents", "JavaScript", "Python"],
+    "languages": ["JavaScript", "TypeScript", "Python"],
     "website": "https://composio.dev",
     "github": "https://github.com/ComposioHQ/composio",
     "pricing": {
@@ -1170,6 +1309,8 @@
     "image": "/copilotkit.jpg",
     "category": ["Agents"],
     "tags": ["Frontend", "Agents", "React", "Open Source"],
+    "languages": ["TypeScript", "JavaScript"],
+    "frameworks": ["React", "Next.js"],
     "website": "https://www.copilotkit.ai",
     "github": "https://github.com/CopilotKit/CopilotKit",
     "pricing": {
@@ -1184,6 +1325,7 @@
     "image": "/vespaai.jpg",
     "category": ["Vector", "Web", "LLM"],
     "tags": ["Search Engine", "Recommendations", "Open Source", "Java"],
+    "languages": ["Java", "Python", "JavaScript", "TypeScript"],
     "website": "https://vespa.ai",
     "github": "https://github.com/vespa-engine/vespa",
     "pricing": {
@@ -1198,6 +1340,7 @@
     "image": "/comet.jpg",
     "category": ["Monitoring", "Analytics"],
     "tags": ["Evaluation", "Testing", "Monitoring", "Open Source", "Comet"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://www.comet.com/opik",
     "github": "https://github.com/comet-ml/opik",
     "pricing": {
@@ -1212,6 +1355,7 @@
     "image": "/braintrust.jpg",
     "category": ["Monitoring", "ML Ops"],
     "tags": ["Evaluation", "Debugging", "LLM Apps", "Collaboration"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://www.braintrust.dev",
     "pricing": {
       "model": "paid"
@@ -1225,6 +1369,7 @@
     "image": "/flowise.png",
     "category": ["Deployment", "Low-Code"],
     "tags": ["Low-Code", "Workflows", "Agents", "Open Source"],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://flowiseai.com",
     "github": "https://github.com/FlowiseAI/Flowise",
     "pricing": {
@@ -1239,6 +1384,7 @@
     "image": "/zed.jpeg",
     "category": ["IDE", "Collaboration"],
     "tags": ["Code Editor", "Collaboration", "Performance", "Open Source"],
+    "languages": ["Rust", "Multi-language support"],
     "website": "https://zed.dev",
     "github": "https://github.com/zed-industries/zed",
     "pricing": {
@@ -1253,6 +1399,8 @@
     "image": "/v0.jpg",
     "category": ["Coding", "AI"],
     "tags": ["Generative UI", "React", "AI Coding", "Vercel"],
+    "languages": ["TypeScript", "JavaScript"],
+    "frameworks": ["React", "Next.js"],
     "website": "https://v0.dev",
     "pricing": {
       "model": "freemium"
@@ -1266,6 +1414,8 @@
     "image": "/bolt-new.jpg",
     "category": ["Coding", "AI"],
     "tags": ["AI Coding", "Full-Stack", "Web Development", "Conversational AI"],
+    "languages": ["JavaScript", "TypeScript", "Python"],
+    "frameworks": ["React", "Vue", "Svelte", "Next.js"],
     "website": "https://bolt.new",
     "pricing": {
       "model": "freemium"
@@ -1279,6 +1429,8 @@
     "image": "/lovable.jpg",
     "category": ["Coding", "AI"],
     "tags": ["AI Coding", "Full-Stack", "Web Development", "No-Code"],
+    "languages": ["JavaScript", "TypeScript"],
+    "frameworks": ["React", "Next.js"],
     "website": "https://lovable.dev",
     "pricing": {
       "model": "freemium"
@@ -1292,6 +1444,7 @@
     "image": "/fireworks-ai.jpg",
     "category": ["API", "LLM"],
     "tags": ["Inference", "Generative AI", "API", "Scalable"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://fireworks.ai",
     "pricing": {
       "model": "paid"
@@ -1305,6 +1458,7 @@
     "image": "/deepseek.png",
     "category": ["LLM", "Open Source"],
     "tags": ["DeepSeek", "Coding", "Open Source", "API"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://deepseek.com",
     "pricing": {
       "model": "freemium"
@@ -1318,6 +1472,7 @@
     "image": "/pulumi.png",
     "category": ["Infrastructure", "IaC"],
     "tags": ["IaC", "Cloud Provisioning", "Multi-Language", "Open Source"],
+    "languages": ["TypeScript", "Python", "Go", "C#", "Java", "YAML"],
     "website": "https://www.pulumi.com",
     "github": "https://github.com/pulumi/pulumi",
     "pricing": {
@@ -1332,6 +1487,7 @@
     "image": "/terraform.png",
     "category": ["Infrastructure", "IaC"],
     "tags": ["IaC", "HashiCorp", "Multi-Cloud", "Open Source"],
+    "languages": ["HCL", "JSON"],
     "website": "https://www.terraform.io",
     "github": "https://github.com/hashicorp/terraform",
     "pricing": {
@@ -1346,6 +1502,7 @@
     "image": "/lakera.png",
     "category": ["Monitoring", "Security"],
     "tags": ["Security", "LLM Protection", "Monitoring", "PII Detection"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://www.lakera.ai",
     "pricing": {
       "model": "paid"
@@ -1359,6 +1516,7 @@
     "image": "/modal.jpeg",
     "category": ["Deployment", "Serverless"],
     "tags": ["Serverless", "ML Workloads", "Python", "Scalable", "CPU", "GPU"],
+    "languages": ["Python"],
     "website": "https://modal.com",
     "pricing": {
       "model": "paid"
@@ -1372,6 +1530,7 @@
     "image": "/pearai.png",
     "category": ["IDE", "AI Coding"],
     "tags": ["AI IDE", "Prototyping", "Open Source"],
+    "languages": ["Multi-language support"],
     "website": "https://pearai.app",
     "pricing": {
       "model": "open-source"
@@ -1385,6 +1544,7 @@
     "image": "/novita.png",
     "category": ["API", "LLM"],
     "tags": ["Inference", "API", "Cost-Effective", "Scalable"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://novita.ai",
     "pricing": {
       "model": "paid"
@@ -1398,6 +1558,7 @@
     "image": "/falcon.png",
     "category": ["LLM", "Open Source"],
     "tags": ["Open Source", "TII", "Multilingual", "Efficient"],
+    "languages": ["Python"],
     "website": "https://falconllm.tii.ae",
     "pricing": {
       "model": "open-source"
@@ -1411,6 +1572,8 @@
     "image": "/vercel.png",
     "category": ["UI", "Open Source"],
     "tags": ["Open Source", "UI", "UI Components", "Markdown", "Vercel"],
+    "languages": ["TypeScript", "JavaScript"],
+    "frameworks": ["React", "Next.js"],
     "website": "https://streamdown.ai",
     "github": "https://github.com/vercel/streamdown",
     "pricing": {
@@ -1425,6 +1588,7 @@
     "image": "/polar.jpg",
     "category": ["Payments", "Infrastructure"],
     "tags": ["payments", "subscriptions", "billing", "fintech"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://polar.sh",
     "github": "https://github.com/polarsource/polar",
     "pricing": {
@@ -1450,7 +1614,15 @@
     "docs": "https://ui.shadcn.com/docs",
     "github": "https://github.com/shadcn-ui/ui",
     "languages": ["TypeScript", "JavaScript"],
-    "frameworks": ["Next.js", "Vite", "Remix", "Gatsby", "Astro", "Laravel", "Create React App"],
+    "frameworks": [
+      "Next.js",
+      "Vite",
+      "Remix",
+      "Gatsby",
+      "Astro",
+      "Laravel",
+      "Create React App"
+    ],
     "pricing": {
       "model": "open-source"
     }
@@ -1497,6 +1669,7 @@
     "image": "/xai.jpg",
     "category": ["LLM", "API"],
     "tags": ["xAI", "Grok", "Image Input", "Real-Time", "API"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://x.ai",
     "pricing": {
       "model": "paid",
@@ -1511,6 +1684,7 @@
     "image": "/microsoft.jpg",
     "category": ["LLM", "API"],
     "tags": ["Azure", "OpenAI", "Enterprise", "API", "Microsoft"],
+    "languages": ["Python", "C#", "JavaScript", "TypeScript", "Java"],
     "website": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
     "pricing": {
       "model": "paid",
@@ -1525,6 +1699,7 @@
     "image": "/aws.jpg",
     "category": ["LLM", "API"],
     "tags": ["AWS", "Bedrock", "Foundation Models", "API", "Enterprise"],
+    "languages": ["Python", "JavaScript", "TypeScript", "Java", "Go"],
     "website": "https://aws.amazon.com/bedrock",
     "pricing": {
       "model": "paid",
@@ -1539,6 +1714,7 @@
     "image": "/deepinfra.jpg",
     "category": ["API", "LLM"],
     "tags": ["Inference", "Open Source", "Serverless", "API", "Cost-Effective"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://deepinfra.com",
     "pricing": {
       "model": "paid",
@@ -1553,6 +1729,7 @@
     "image": "/google-cloud-ai.png",
     "category": ["LLM", "API", "Infrastructure"],
     "tags": ["Google Cloud", "Vertex AI", "Gemini", "MLOps", "API"],
+    "languages": ["Python", "Java", "JavaScript", "TypeScript", "Go"],
     "website": "https://cloud.google.com/vertex-ai",
     "pricing": {
       "model": "paid",
@@ -1567,6 +1744,7 @@
     "image": "/cerebras.jpg",
     "category": ["API", "LLM"],
     "tags": ["Inference", "High Performance", "Hardware-Optimized", "API"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://cerebras.ai",
     "pricing": {
       "model": "paid",
@@ -1581,6 +1759,7 @@
     "image": "/luma-ai.jpg",
     "category": ["API", "Generative AI"],
     "tags": ["3D Generation", "Video Generation", "Image Generation", "API"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://lumalabs.ai",
     "pricing": {
       "model": "paid"
@@ -1594,6 +1773,7 @@
     "image": "/baseten.jpg",
     "category": ["Deployment", "API"],
     "tags": ["ML Deployment", "Serverless", "Inference", "API", "Scalable"],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://baseten.co",
     "pricing": {
       "model": "paid"
@@ -1607,6 +1787,7 @@
     "image": "/ollama.png",
     "category": ["LLM", "Open Source"],
     "tags": ["Local Inference", "Open Source", "CLI", "Privacy", "Self-Hosted"],
+    "languages": ["Go", "Python", "JavaScript", "TypeScript"],
     "website": "https://ollama.ai",
     "github": "https://github.com/ollama/ollama",
     "pricing": {
@@ -1621,6 +1802,7 @@
     "image": "/google-cloud-ai.png",
     "category": ["LLM", "API"],
     "tags": ["Anthropic", "Claude", "Google Cloud", "Vertex AI", "Enterprise"],
+    "languages": ["Python", "Java", "JavaScript", "TypeScript", "Go"],
     "website": "https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/claude",
     "pricing": {
       "model": "paid",
@@ -1641,6 +1823,7 @@
       "Multi-Provider",
       "Routing"
     ],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://portkey.ai",
     "pricing": {
       "model": "freemium"
@@ -1660,6 +1843,7 @@
       "AI Models",
       "Global"
     ],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://developers.cloudflare.com/workers-ai",
     "pricing": {
       "model": "freemium",
@@ -1680,6 +1864,7 @@
       "Unified API",
       "Routing"
     ],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://openrouter.ai",
     "pricing": {
       "model": "paid",
@@ -1701,6 +1886,7 @@
       "Vercel",
       "Observability"
     ],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://vercel.com/docs/ai-gateway",
     "pricing": {
       "model": "paid",
@@ -1721,6 +1907,7 @@
       "Document Analysis",
       "API"
     ],
+    "languages": ["Python", "JavaScript", "TypeScript"],
     "website": "https://kimi.moonshot.cn",
     "pricing": {
       "model": "paid",
@@ -1742,6 +1929,7 @@
       "Coding",
       "API"
     ],
+    "languages": ["Python", "C++"],
     "website": "https://qwenlm.github.io",
     "github": "https://github.com/QwenLM/Qwen",
     "pricing": {
@@ -1762,6 +1950,7 @@
       "Design",
       "Text-to-Image"
     ],
+    "languages": ["API-based (Discord bot)"],
     "website": "https://www.midjourney.com",
     "pricing": {
       "model": "paid",
@@ -1776,6 +1965,7 @@
     "image": "/gemini.png",
     "category": ["Coding", "AI"],
     "tags": ["Google", "AI Assistant", "Chat", "Coding", "Multimodal"],
+    "languages": ["Natural language interface"],
     "website": "https://gemini.google.com",
     "pricing": {
       "model": "freemium"
@@ -1789,6 +1979,7 @@
     "image": "/claude.png",
     "category": ["Coding", "AI"],
     "tags": ["Anthropic", "Claude", "Coding", "AI Assistant", "Debugging"],
+    "languages": ["Natural language interface"],
     "website": "https://claude.ai",
     "pricing": {
       "model": "freemium"
@@ -1802,6 +1993,7 @@
     "image": "/openai.jpg",
     "category": ["Coding", "AI"],
     "tags": ["OpenAI", "GPT-4", "AI Assistant", "Chat", "Coding"],
+    "languages": ["Natural language interface"],
     "website": "https://chat.openai.com",
     "pricing": {
       "model": "freemium"
@@ -1815,6 +2007,7 @@
     "image": "/grok.jpg",
     "category": ["Coding", "AI"],
     "tags": ["xAI", "Grok", "AI Assistant", "Real-Time", "Coding"],
+    "languages": ["Natural language interface"],
     "website": "https://x.ai",
     "pricing": {
       "model": "paid"
@@ -1828,6 +2021,7 @@
     "image": "/convex.png",
     "category": ["Coding", "AI"],
     "tags": ["Convex", "AI Assistant", "Full-Stack", "Backend", "Real-Time"],
+    "languages": ["TypeScript", "JavaScript"],
     "website": "https://convex.dev/chef",
     "pricing": {
       "model": "freemium"
@@ -1847,6 +2041,7 @@
       "Cloud Functions",
       "Google"
     ],
+    "languages": ["JavaScript", "TypeScript"],
     "website": "https://firebase.studio",
     "pricing": {
       "model": "freemium"
@@ -1860,6 +2055,7 @@
     "image": "/gemini.png",
     "category": ["Coding", "AI"],
     "tags": ["Google", "Gemini", "CLI", "Terminal", "Coding"],
+    "languages": ["CLI tool (multi-language support)"],
     "website": "https://ai.google.dev",
     "pricing": {
       "model": "freemium"
@@ -1873,6 +2069,7 @@
     "image": "/opencode.png",
     "category": ["Coding", "AI", "Open Source"],
     "tags": ["Open Source", "AI Coding", "Privacy", "Code Generation"],
+    "languages": ["Multi-language support"],
     "website": "https://opencode.dev",
     "github": "https://github.com/opencode/opencode",
     "pricing": {
@@ -1894,6 +2091,8 @@
       "Chat",
       "TypeScript"
     ],
+    "languages": ["TypeScript", "JavaScript"],
+    "frameworks": ["Next.js"],
     "website": "https://create.t3.gg",
     "github": "https://github.com/t3-oss/create-t3-app",
     "pricing": {
@@ -1916,6 +2115,7 @@
       "Observability",
       "Open Source"
     ],
+    "languages": ["TypeScript", "JavaScript"],
     "website": "https://mastra.ai",
     "github": "https://github.com/mastra-ai/mastra",
     "pricing": {

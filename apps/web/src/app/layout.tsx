@@ -79,7 +79,13 @@ export default function RootLayout({
           disableTransitionOnChange
           enableSystem
         >
-          <NuqsAdapter>
+          <NuqsAdapter
+            defaultOptions={{
+              shallow: false,
+              scroll: true,
+              clearOnDefault: false,
+            }}
+          >
             <Header />
 
             {children}
