@@ -10,7 +10,7 @@ on:
     branches:
       - main
     paths:
-      - apps/website/**
+      - apps/web/**
       - packages/**
   workflow_dispatch:
 jobs:
