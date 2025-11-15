@@ -162,8 +162,21 @@
     "languages": ["Python", "JavaScript", "TypeScript", "Go", "Java"],
     "website": "https://www.pinecone.io",
     "pricing": {
-      "model": "freemium",
-      "price": "Starting at $70/month"
+      "model": "freemium"
+    }
+  },
+  {
+    "slug": "turbopuffer",
+    "name": "Turbopuffer",
+    "description": "turbopuffer is a fast search engine that combines vector and full-text search using object storage, making all your data easily searchable./n/n Using only object storage for state and NVMe SSD with memory cache for compute, turbopuffer scales horizontally to handle billions of documents.",
+    "shortDescription": "serverless vector and full-text search built from first principles on object storage: fast, 10x cheaper, and extremely scalable",
+    "image": "/turbopuffer.png",
+    "category": ["Vector"],
+    "tags": ["Vector Search", "RAG", "Full Text Search", "Hybrid Search"],
+    "website": "https://www.turbopuffer.com",
+    "docs": "https://turbopuffer.com/docs",
+    "pricing": {
+      "model": "paid"
     }
   },
   {

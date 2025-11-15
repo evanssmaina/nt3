@@ -36,7 +36,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/useagents.git
+   git clone https://github.com/useagentsai/useagents.git
    cd useagents
    ```
 
